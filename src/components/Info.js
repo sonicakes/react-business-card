@@ -1,9 +1,14 @@
 import React from "react";
+import Photo from "./info/Photo";
+import Buttons from "./info/Buttons";
+import Name from "./info/Name";
 
 export default function Info() {
     return (
-        <div>
-            here is info component
+        <div className="info-section">
+            <Photo />
+            <Name />
+            <Buttons /> 
         </div>
     )
 }

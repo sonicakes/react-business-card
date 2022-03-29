@@ -1,38 +1,54 @@
-.App {
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+
+/*
+3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #23252C;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+ max-width: 300px;
+background-color: #1A1B21;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.photo-section img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.name-section {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons {
+  text-align: center;
+}
+.button {
+  background-color: #fff;
+  color: gray/700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button.blue{
+  background-color: #5093E2;
+  color: #fff;
 }
